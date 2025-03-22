@@ -1,22 +1,31 @@
-package week1.day1;
+package week3Day2;
 
-public class Chrome 
+import org.checkerframework.checker.units.qual.s;
+
+public class Chrome extends Browser
 {
-	private static final char c = 0;
-
-	public static void main(String[] args) 
+	public void openIncognito()
 	{
-		float version=91.0f;
-		String developer= "google";
-		boolean isBeta = false;
-		int releaseYear = 2008;
-		char shortcutKey = 'c';
-		
-		System.out.println("Developed by  " + developer);
-		System.out.println("Version  "+ version);
-		System.out.println("Released in the year " + releaseYear);
-		System.out.println("Is it a Beta version " + isBeta);
-		System.out.println("Shortcut key is " + shortcutKey);
+		System.out.println("Open Incognito in Chrome");		
+	
+	}
+	public void clearCache()
+	{
+		System.out.println("Clear Cache in CHROME");
+	}
+	public static void main(String[] args)
+	{
+
+		Chrome c=new Chrome();
+		c.openIncognito();
+		c.clearCache();
+		c.openURL();
+		c.closeBrowser();
+		c.navigateBack();
+	System.out.println(c.browserName);
+	System.out.println(c.browserVersion);
+
+
 	}
 
 }
